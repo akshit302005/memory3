@@ -108,6 +108,25 @@
             cursor: pointer;
             border-radius: 8px;
         }
+
+        /* End Slide Styling */
+        .end-slide {
+            display: none;
+            background-color: #f8d7da; /* Light pink background */
+            color: #721c24;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .end-slide h2 {
+            font-size: 2rem;
+        }
     </style>
 </head>
 <body>
@@ -148,56 +167,67 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div class="slide fade">
                     <img src="WhatsApp Image 2025-01-01 at 21.23.10_4934ef4d.jpg" alt="Memory 5">
                 </div>
+
                 <div class="slide fade">
                     <img src="WhatsApp Image 2025-01-01 at 21.23.11_59fec537.jpg" alt="Memory 6">
                 </div>
+
                 <div class="slide fade">
                     <video autoplay muted loop>
                         <source src="Untitled video - Made with Clipchamp3.mp4"type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div class="slide fade">
                     <img src="WhatsApp Image 2025-01-01 at 21.23.13_cfa1b49f.jpg" alt="Memory 7">
                 </div>
+
                 <div class="slide fade">
                     <img src="WhatsApp Image 2025-01-01 at 21.23.14_7c03bf9a.jpg" alt="Memory 8">
                 </div>
+
                 <div class="slide fade">
                     <video autoplay muted loop>
                         <source src="VID-20241231-WA0005.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div class="slide fade">
                     <img src="WhatsApp Image 2025-01-01 at 21.23.15_7119cafd.jpg" alt="Memory 9">
                 </div>
+
                 <div class="slide fade">
                     <img src="IMG-20241231-WA0011.jpg" alt="Memory 9">
                 </div>
+
                 <div class="slide fade">
                     <video autoplay muted loop>
                         <source src="VID-20241226-WA0001.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div class="slide fade">
                     <video autoplay muted loop>
                         <source src="VID-20241231-WA0004.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                </div>
+
+                <!-- End Slide: Message to Best Friend -->
                 <div class="end-slide fade">
                     <div>
                         <h2>To my best friend...</h2>
-                        <p>HeHe My Little Monkey To be continued.... 2025</p>
+                        <p>Thank you for being a part of all these beautiful memories. Here's to many more to come!</p>
                     </div>
                 </div>
-                </div>
 
-                <!-- Add more slides as needed -->
             </div>
 
             <!-- Navigation Buttons -->
@@ -218,11 +248,20 @@
 
         function showSlides() {
             let slides = document.getElementsByClassName("slide");
+            let endSlide = document.getElementsByClassName("end-slide")[0];
             if (slideIndex >= slides.length) slideIndex = 0; // Reset to the first slide
+
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none"; // Hide all slides
             }
-            slides[slideIndex].style.display = "block"; // Show the current slide
+
+            if (slideIndex == slides.length) {
+                endSlide.style.display = "flex"; // Show end slide
+            } else {
+                endSlide.style.display = "none"; // Hide end slide
+                slides[slideIndex].style.display = "block"; // Show the current slide
+            }
+
             slideIndex++; // Move to the next slide
             setTimeout(showSlides, 5000); // Change slide every 5 seconds (5000 ms)
         }
