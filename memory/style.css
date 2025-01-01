@@ -116,3 +116,20 @@ header {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+.end-slide {
+    display: none; /* Initially hidden */
+    background-color: #f8d7da; /* Light pink background */
+    color: #721c24; /* Dark red color for text */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 100%; /* Fill the container */
+    display: flex;
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+}
+
+.end-slide h2 {
+    font-size: 2rem; /* Make the heading bigger */
+}
