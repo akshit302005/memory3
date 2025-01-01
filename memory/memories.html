@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories from 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Container for the whole page */
+        body {
+            background-color: #f1f1f1; /* Light gray background color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        #main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Styling for captions and other content */
+        .caption {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 80%;
+            text-align: left;
+        }
+
+        .caption h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .caption p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        /* Slideshow Container (for positioning) */
+        #slideshow-container {
+            width: 80%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            border: 15px solid #dcdcdc; /* Frame border */
+            border-radius: 20px; /* Rounded corners */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for a realistic effect */
+        }
+
+        /* Styling for individual slides */
+        .slide.fade {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Ensuring images and videos are contained and scale correctly inside the frame */
+        .slide img, .slide video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures images/videos fit the frame */
+            border-radius: 10px; /* Optional: adds rounded corners to the image/video */
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Mute/Unmute Button */
+        #mute-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <h1 class="animated-title">2024</h1>
+            <p class="subtitle">A year to remember</p>
+        </header>
+
+        <!-- Slideshow Container -->
+        <div id="slideshow-container">
+            <div class="slideshow">
+                <!-- Slide 1: Image -->
+                <div class="slide fade">
+                    <img src="D:/NEW YEAR/images/IMG-20240916-WA0033.jpg" alt="Memory 1">
+                </div>
+
+                <!-- Slide 2: Video -->
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:/NEW YEAR/images/VID-20241226-WA0001.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- More Slides -->
+                <div class="slide fade">
+                    <img src="D:/NEW YEAR/images/IMG-20241205-WA0011.jpg" alt="Memory 3">
+                </div>
+
+                <div class="slide fade">
+                    <img src="D:/NEW YEAR/images/IMG-20241205-WA0015.jpg" alt="Memory 4">
+                </div>
+
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:/NEW YEAR/images/Untitled video - Made with Clipchamp2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\WhatsApp Image 2025-01-01 at 21.23.10_4934ef4d.jpg" alt="Memory 5">
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\WhatsApp Image 2025-01-01 at 21.23.11_59fec537.jpg" alt="Memory 6">
+                </div>
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:\NEW YEAR\images\Untitled video - Made with Clipchamp3.mp4"type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\WhatsApp Image 2025-01-01 at 21.23.13_cfa1b49f.jpg" alt="Memory 7">
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\WhatsApp Image 2025-01-01 at 21.23.14_7c03bf9a.jpg" alt="Memory 8">
+                </div>
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:\NEW YEAR\images\VID-20241231-WA0005.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\WhatsApp Image 2025-01-01 at 21.23.15_7119cafd.jpg" alt="Memory 9">
+                </div>
+                <div class="slide fade">
+                    <img src="D:\NEW YEAR\images\IMG-20241231-WA0011.jpg" alt="Memory 9">
+                </div>
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:\NEW YEAR\images\VID-20241226-WA0001.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide fade">
+                    <video autoplay muted loop>
+                        <source src="D:\NEW YEAR\images\VID-20241231-WA0004.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Add more slides as needed -->
+            </div>
+
+            <!-- Navigation Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- Background Video (Using YouTube iframe) -->
+    <iframe id="youtube-video" width="0" height="0" src="https://www.youtube.com/embed/cmXrHQENZ6A?autoplay=1&loop=1&playlist=cmXrHQENZ6A&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <!-- Mute/Unmute Button -->
+    <button id="mute-button" onclick="toggleMute()">Unmute</button>
+
+    <script>
+        // Slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            if (slideIndex >= slides.length) slideIndex = 0; // Reset to the first slide
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Hide all slides
+            }
+            slides[slideIndex].style.display = "block"; // Show the current slide
+            slideIndex++; // Move to the next slide
+            setTimeout(showSlides, 5000); // Change slide every 5 seconds (5000 ms)
+        }
+
+        // Function to navigate the slideshow with buttons
+        function plusSlides(n) {
+            slideIndex += n;
+            if (slideIndex < 0) slideIndex = 0;
+            showSlides();
+        }
+
+        // Mute/Unmute toggle function
+        function toggleMute() {
+            const iframe = document.getElementById('youtube-video');
+            const currentSrc = iframe.src;
+            if (currentSrc.includes("mute=1")) {
+                iframe.src = currentSrc.replace("mute=1", "mute=0");
+                document.getElementById('mute-button').innerText = 'Mute'; // Change button text to 'Mute'
+            } else {
+                iframe.src = currentSrc.replace("mute=0", "mute=1");
+                document.getElementById('mute-button').innerText = 'Unmute'; // Change button text to 'Unmute'
+            }
+        }
+
+        // Start the slideshow immediately when the page loads
+        showSlides();
+    </script>
+</body>
+</html>
